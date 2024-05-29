@@ -102,6 +102,7 @@ import org.eclipse.microprofile.jwt.Claim;
 import org.eclipse.microprofile.jwt.Claims;
 
 @Path("secure")
+@RequestScope
 public class SecureResource {
 
     @Claim(standard = Claims.preferred_username)
@@ -188,6 +189,7 @@ import org.eclipse.microprofile.jwt.Claim;
 import org.eclipse.microprofile.jwt.Claims;
 
 @Path("/secure")
+@RequestScoped
 public class SecureResource {
 
     @Claim(standard = Claims.preferred_username)
